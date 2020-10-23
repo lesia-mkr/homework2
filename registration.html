@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Makarova Olesia">
+    <meta name="keywords" content="растения, цветы, травы">
+    <link rel="shortcut icon" href="pictures/lil.png" type="image/png">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="articles.html">Статьи</a>
+            <a href="contacts.html">Наши адреса и контакты</a>
+            <a href="shop.html">Каталог</a>
+            <a href="auto_copy.html">Профиль</a>
+        </nav>
+    </header>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        </div>
+        <fieldset>
+            <legend>Обязательная Форма Регистрации</legend>
+            <label>Ваше имя:<input name="username" type="text" required maxlength="12" minlength="2"></label>
+            <label>Ваш email:<input name="useremail" type="email" required></label>
+            <label>Придумайте пароль:<input type="password" name="userpassword" required minlength="8"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Дополнительная информация</legend>
+            <label>Ваше фото:<input type="file" accept="image/*" name="userphoto"></label>
+            <label>Дата рождения:<input type="date" name="userdate" value="userdate"></label>
+            <div>
+                <label for="usershop">Ближайший к вам магазин:</label>
+                <select name="shop" id="usershop">
+                    <option value="1">адрес раз</option>
+                    <option value="2">адрес два</option>
+                    <option value="3">адрес три</option>
+                </select>
+            </div>
+        </fieldset>
+        <div>
+            <label>Хотите получать письма с новостями и акциями магазина?<input type="checkbox" checked name="mailing"></label>
+        </div>
+        <div>
+            <label>Согласие на обработку пероснальных данных<input type="radio" required name="consent"></label>
+        </div>
+        <div>
+            <button type="submit">зарегистрироваться</button>
+            <button type="reset">очистить все поля</button>
+        </div>
+    </form>
+    <footer> <small>цветочки © <time datetime="2020">2020</time> цветочки </small></footer>
+</body>
+</html>

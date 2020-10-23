@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Makarova Olesia">
+    <meta name="keywords" content="растения, цветы, травы">
+    <link rel="shortcut icon" href="pictures/lil.png" type="image/png">
+    <title>Форма Заказа</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="articles.html">Статьи</a>
+            <a href="contacts.html">Наши адреса и контакты</a>
+            <a href="shop.html">Каталог</a>
+            <a href="auto_copy.html">Профиль</a>
+        </nav>
+    </header>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Основная информация о заказе</legend>
+            <div><!--как сделать так чтоб выводилась сумма выбранного и следующие варианты зависели от выбранного тут?-->
+                <label for="order">выберите цветочки</label>
+                <p><small>(возможен множественный выбор)</small></p>
+                <select multiple name="order" id="order" size="4"  required autofocus>
+                    <option value="1">Алоэ</option>
+                    <option value="2">Мандрагора</option>
+                    <option value="3">Кактус</option>
+                    <option value="4">Монстера</option>
+                </select>
+            </div>
+            <di>
+                <p>Выберите подарок к первому заказу (или не выбирайте)</p><!--как сделать так чтоб хотя бы один выбрали? или с чекбоксом не работает такое?-->
+                <label>Кашпо<input name="gift[]" type="checkbox" value="1"></label>
+                <label>Удобрение<input name="gift[]" type="checkbox" value="2"></label>
+                <label>Книжка про уход за растениями<input name="gift[]" type="checkbox" value="3"></label>
+                <label>Книжка с видами растений<input name="gift[]" type="checkbox" value="4"></label>
+            </di>
+            <div>
+                <p>Получение заказа</p>
+                <label>Доставка<input name="delivery" id="delivery" type="radio" value="1" required></label>
+                <label>Самовывоз<input name="delivery" id="delivery" type="radio" value="2"></label>
+            </div>
+            <div>
+                <label for="date">Выберите день доставки или Самовывоза</label>
+                <input type="date" id="date" name="datedelivery" required>
+            </div>
+        </fieldset>
+        <div>
+            <label for="opinion">Ваши пожелания и комментарии</label>
+            <textarea id="opinion" placeholder="пишите тут" maxlength="300"></textarea>
+        </div>
+        <div>
+            <label for="share_with_friends">Оцените от 1 до 10 с какой вероятностью вы посоветуете нас знакомым?</label>
+            <input id="share_with_friends" name="rating" type="number" min="8" max="10">
+        </div>
+        <div>
+            <button type="submit">Подтвердить заказ</button>
+            <button type="reset">Очистить форму заказа</button>
+        </div>
+    </form>
+    <footer> <small>цветочки © <time datetime="2020">2020</time> цветочки </small></footer>
+</body>
+</html>
