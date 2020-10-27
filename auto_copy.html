@@ -6,31 +6,34 @@
     <meta name="keywords" content="растения, цветы, травы">
     <link rel="shortcut icon" href="pictures/lil.png" type="image/png">
     <title>Профиль</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="articles.html">Статьи</a>
-            <a href="contacts.html">Наши адреса и контакты</a>
-            <a href="shop.html">Каталог</a>
-            <a href="auto_copy.html">Профиль</a>
+    <header class="bg-aqua-1-">
+        <nav class="container">
+            <a class="text-green-1-" href="index.html">Главная</a>
+            <a class="text-green-1-" href="articles.html">Статьи</a>
+            <a class="text-green-1-" href="contacts.html">Наши адреса и контакты</a>
+            <a class="text-green-1-" href="shop.html">Каталог</a>
+            <a class="text-green-1-" href="auto_copy.html">Профиль</a>
         </nav>
     </header>
-    <form action="#" method="POST" enctype="multipart/form-data">
-        <div>
-            <label for="email">email:</label>
-            <input name="email" id="email" type="email" placeholder="Введите email" required maxlength="10" autofocus>
-        </div>
-        <div>
-            <label for="password">Пароль:</label> 
-            <input id="password" type="password" placeholder="Введите пароль" required minlength="6"> 
-        </div>
-        <div>
-            <input type="submit" value="Войти">
-            <a href="registration.html">Регистрация</a>
-        </div>
-    </form>
-    <footer> <small>цветочки © <time datetime="2020">2020</time> цветочки </small></footer>
+    <body>
+        <form action="#" method="POST" class="container">
+            <div>
+                <label for="email">email:</label>
+                <input name="email" id="email" type="email" placeholder="Введите email" required maxlength="10" autofocus>
+            </div>
+            <div>
+                <label for="password">Пароль:</label> 
+                <input id="password" type="password" placeholder="Введите пароль" required minlength="6"> 
+            </div>
+            <div>
+                <input type="submit" value="Войти">
+                <a href="registration.html" class="more-btn">Регистрация</a>
+            </div>
+        </form>
+    </body>
+    <footer class="bg-aqua-1-"> <small>цветочки © <time datetime="2020">2020</time> цветочки </small></footer>
 </body>
 </html>
