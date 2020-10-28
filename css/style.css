@@ -11,18 +11,18 @@ html {
   }
 body {
     font-size: 18px;
-    color: #004D40;
+    color: #373833;
     margin: 0; 
     text-align: center;
 }
 a {
     text-decoration: none;
-    color: #00796B;
+    color: #373833;
     
 }
 article {
     width: 100%;
-    background-color: #80CBC4;
+    background-color: #E8EAE3;
     font-size: 22px;
     padding: 20px;
 }
@@ -33,7 +33,7 @@ table{
 table,
 th,
 td {
-    border: 2px solid #004D40;
+    border: 2px solid #373833;
 }
 td,
 th {
@@ -56,23 +56,27 @@ img {
 footer {
     margin: 0;
 }
-.bg-aqua-1- {
-    background: #80CBC4;
-}
 header,
 footer {
     height: 50px;
+}
+.bg-w {
+    background-color: #E8EAE3;
 }
 .more-btn {
     padding-top: 10px;
     padding-bottom: 10px;
     display: inline-block;
     text-align: center;
-    background-color: #B2DFDB;
+    background-color: #E8EAE3;
 }
-form {
-    background-image: url(../pictures/legkie-cvety-akvarelyu.jpg);
-    background-repeat: round;
-    background-position: center;
-    background-attachment: fixed;
+.bg-aqua-1- {
+    background: #FA2742;
 }
+
+/**
+
+#E8EAE3
+#373833 
+#FA2742 pink
+**/
