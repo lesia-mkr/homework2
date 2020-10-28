@@ -27,6 +27,8 @@ article {
     background-color: #E8EAE3;
     font-size: 22px;
     padding: 20px;
+    margin-bottom: 55px;
+    margin-top: 25px;
 }
 
 table{
@@ -61,11 +63,18 @@ footer {
     margin: 0;
 }
 
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
 header,
 footer {
     height: 50px;
 }
-
 
 .container {
     max-width: 1000px;
@@ -94,6 +103,26 @@ footer {
     padding: 10px;
     font-size: 35px;
     border-radius: 30%;
+}
+.shadow-block {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+}
+.shadow-block1 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.for_header {
+    margin-top: 70px;
+}
+.item {
+    position: relative;
+}
+.item a{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    text-align: center;
 }
 
 
